@@ -1,0 +1,11 @@
+id,code,style
+1,a9a 9a9,CA:1
+2,a9a-9a9,CA:2
+3,a9a.a9a,CA:1
+4,9a9 a9a,CA:2
+5,abc,CA:1
+6,99999,USA
+7,99999-0000,USA
+8,99999 0000,USA
+9,999,USA
+10,99999-00001,USA

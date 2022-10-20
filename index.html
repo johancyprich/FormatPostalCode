@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>FormatPostalCode Test</title>
+    
+    <script src="FormatPostalCode.js" type="text/javascript"></script>    
+  </head>
+
+  <body>
+    <h1>FormatPostalCode Test</h1>
+    
+    <table border=1 cellpadding=5>
+      <tr>
+        <td>PostalCode</td>
+        <td>style</td>
+        <td>result</td>
+      </tr>
+      
+      <tr>
+        <td>a9a 9a9</td>
+        <td>CA:1</td>
+        <td><script>document.write (FormatPostalCode ("a9a 9a9", "CA:1"));</script></td>
+      </tr>
+
+      <tr>
+        <td>a9a-9a9</td>
+        <td>CA:2</td>
+        <td><script>document.write (FormatPostalCode ("a9a-9a9", "CA:2"));</script></td>
+      </tr>
+
+      <tr>
+        <td>a9a.9a9a</td>
+        <td>CA:1</td>
+        <td><script>document.write (FormatPostalCode ("a9a.9a9a", "CA:1"));</script></td>
+      </tr>
+
+      <tr>
+        <td>9al a9a</td>
+        <td>CA:2</td>
+        <td><script>document.write (FormatPostalCode ("9al a9a", "CA:2"));</script></td>
+      </tr>
+
+      <tr>
+        <td>abc</td>
+        <td>CA:1</td>
+        <td><script>document.write (FormatPostalCode ("abc", "CA:1"));</script></td>
+      </tr>
+
+      <tr>
+        <td>99999</td>
+        <td>USA</td>
+        <td><script>document.write (FormatPostalCode ("99999", "USA"));</script></td>
+      </tr>
+
+      <tr>
+        <td>99999-0000</td>
+        <td>USA</td>
+        <td><script>document.write (FormatPostalCode ("99999-0000", "USA"));</script></td>
+      </tr>
+
+      <tr>
+        <td>99999 0000</td>
+        <td>USA</td>
+        <td><script>document.write (FormatPostalCode ("99999 0000", "USA"));</script></td>
+      </tr>
+
+      <tr>
+        <td>999</td>
+        <td>USA</td>
+        <td><script>document.write (FormatPostalCode ("999", "USA"));</script></td>
+      </tr>
+
+      <tr>
+        <td>99999-00001</td>
+        <td>USA</td>
+        <td><script>document.write (FormatPostalCode ("99999-00001", "USA"));</script></td>
+      </tr>
+  
+    </table>
+  </body>
+</html>
